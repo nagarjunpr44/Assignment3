@@ -1,0 +1,43 @@
+//1.For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+
+var text = "";
+var i;
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+//
+
+var details = {name:"Raj", place:"india", age:25};
+
+var text = "Data:";
+var x;
+for (x in details) {
+  text += details[x] + " ";
+}
+
+//
+
+var cars = ['BMW', 'Volvo', 'Mini'];
+var x;
+
+for (x of cars) {
+  document.write(x + "<br >");
+}
+
+//
+//2.Create your own resume data in JSON format
+
+var resume={
+"name":"Nagarjun",
+"age":22,
+"skills":"c++,c,html,css",
+"education":"Btech in Computer Science",
+}
+const myObj = JSON.parse(resume);
+x = myObj.name;
+
+//
+
+
